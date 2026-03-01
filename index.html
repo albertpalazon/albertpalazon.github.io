@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Albert Palazon — Cybersecurity portfolio: projects, labs and writeups." />
+  <title>Albert Palazon — Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Animated background -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Go to top">Albert Palazon</a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#projects">Projects</a>
+        <a href="#labs">Security Labs</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" type="button" aria-label="Toggle theme" title="Toggle theme">
+          <span class="icon" aria-hidden="true">◐</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <div class="kicker">Cybersecurity Portfolio</div>
+          <h1>Projects, labs & writeups focused on practical security.</h1>
+          <p class="sub">
+            Offensive methodologies, detection labs and real hands-on projects documented with clean READMEs.
+          </p>
+
+          <div class="cta">
+            <a class="btn primary" href="https://github.com/albertpalazon" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="btn" href="https://www.linkedin.com/in/albertpalazon/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="btn" href="assets/cv.pdf" target="_blank" rel="noreferrer">Download CV</a>
+          </div>
+
+          <div class="meta">
+            <span class="pill">Barcelona</span>
+            <span class="pill">Offensive Security</span>
+            <span class="pill">Detection & Monitoring</span>
+            <span class="pill">Cloud / IoT</span>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="card highlight">
+            <div class="card-title">Highlights</div>
+            <ul class="list">
+              <li>Documented repositories with reproducible steps and outcomes</li>
+              <li>Security-labs repo for structured writeups and playbooks</li>
+              <li>Focus on methodology (enum → exploit → post → report mindset)</li>
+            </ul>
+            <div class="mini-cta">
+              <a class="text-link" href="#projects">View projects →</a>
+            </div>
+          </div>
+
+          <div class="stats">
+            <div class="stat card">
+              <div class="stat-num">4</div>
+              <div class="stat-label">Pinned projects</div>
+            </div>
+            <div class="stat card">
+              <div class="stat-num">∞</div>
+              <div class="stat-label">Writeups in progress</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <p class="muted">A selection of repositories currently featured on my GitHub profile.</p>
+        </div>
+
+        <div class="grid">
+          <a class="project card" href="https://github.com/albertpalazon/rvnar-osint-distro" target="_blank" rel="noreferrer">
+            <div class="project-top">
+              <div class="project-title">rvnar-osint-distro</div>
+              <div class="tag">Shell</div>
+            </div>
+            <div class="project-desc">
+              Custom OSINT-focused Linux distribution (Master final project), optimized for investigative workflows.
+            </div>
+            <div class="project-foot">
+              <span class="chip">OSINT</span>
+              <span class="chip">Linux</span>
+              <span class="chip">Tooling</span>
+            </div>
+          </a>
+
+          <a class="project card" href="https://github.com/albertpalazon/security-labs" target="_blank" rel="noreferrer">
+            <div class="project-top">
+              <div class="project-title">security-labs</div>
+              <div class="tag">Writeups</div>
+            </div>
+            <div class="project-desc">
+              Security labs documentation focused on offensive methodologies and practical skill development.
+            </div>
+            <div class="project-foot">
+              <span class="chip">AD</span>
+              <span class="chip">Pentest</span>
+              <span class="chip">Notes</span>
+            </div>
+          </a>
+
+          <a class="project card" href="https://github.com/albertpalazon/elk-log-monitoring-detection-lab" target="_blank" rel="noreferrer">
+            <div class="project-top">
+              <div class="project-title">elk-log-monitoring-detection-lab</div>
+              <div class="tag">ELK</div>
+            </div>
+            <div class="project-desc">
+              ELK data pipeline and log monitoring lab, focused on detection and visibility.
+            </div>
+            <div class="project-foot">
+              <span class="chip">Elastic</span>
+              <span class="chip">Logs</span>
+              <span class="chip">Detection</span>
+            </div>
+          </a>
+
+          <a class="project card" href="https://github.com/albertpalazon/totp-2fa-auth-demo" target="_blank" rel="noreferrer">
+            <div class="project-top">
+              <div class="project-title">totp-2fa-auth-demo</div>
+              <div class="tag">Python</div>
+            </div>
+            <div class="project-desc">
+              TOTP 2FA authentication demo with practical implementation details and security considerations.
+            </div>
+            <div class="project-foot">
+              <span class="chip">Auth</span>
+              <span class="chip">2FA</span>
+              <span class="chip">Python</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="labs" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Security Labs</h2>
+          <p class="muted">Writeups and playbooks (methodology-first, not just “flags”).</p>
+        </div>
+
+        <div class="two-col">
+          <div class="card">
+            <div class="card-title">Current focus</div>
+            <ul class="list">
+              <li>Active Directory labs (eCPPTv3-oriented)</li>
+              <li>Enumeration checklists and reusable workflows</li>
+              <li>Clean writeups with screenshots and remediation notes</li>
+            </ul>
+            <div class="mini-cta">
+              <a class="btn" href="https://github.com/albertpalazon/security-labs" target="_blank" rel="noreferrer">Open security-labs</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">Writeup template (what I include)</div>
+            <ul class="list">
+              <li>Scope + assumptions</li>
+              <li>Enumeration tree (ports → services → findings)</li>
+              <li>Exploit path + alternatives tried</li>
+              <li>Post-exploitation + proof</li>
+              <li>Fixes / remediation notes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>About</h2>
+          <p class="muted">Short summary and core skill areas.</p>
+        </div>
+
+        <div class="two-col">
+          <div class="card">
+            <div class="card-title">Profile</div>
+            <p class="muted">
+              I build and document hands-on security projects to demonstrate practical skills:
+              offensive methodology, detection labs, and security fundamentals applied to real tooling.
+            </p>
+            <p class="muted">
+              This site is a curated entry point. The full technical depth is in the repos.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-title">Core skills</div>
+            <div class="skill-grid">
+              <div class="skill">
+                <div class="skill-name">Offensive Security</div>
+                <div class="skill-desc">Recon, enum, exploitation workflow, reporting mindset</div>
+              </div>
+              <div class="skill">
+                <div class="skill-name">Detection & Monitoring</div>
+                <div class="skill-desc">Log pipelines, visibility, basic detections and triage</div>
+              </div>
+              <div class="skill">
+                <div class="skill-name">Cloud / IoT</div>
+                <div class="skill-desc">AWS fundamentals, IAM basics, cert-based auth concepts</div>
+              </div>
+              <div class="skill">
+                <div class="skill-name">Documentation</div>
+                <div class="skill-desc">Clear READMEs, reproducible steps, evidence-based writeups</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p class="muted">Fastest way: LinkedIn or email.</p>
+        </div>
+
+        <div class="card contact">
+          <div class="cta">
+            <a class="btn primary" href="mailto:albertpalazon97@gmail.com">albertpalazon97@gmail.com</a>
+            <a class="btn" href="https://www.linkedin.com/in/albertpalazon/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="btn" href="https://github.com/albertpalazon" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+
+          <div class="footer">
+            <span class="muted">© <span id="year"></span> Albert Palazon</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
