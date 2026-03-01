@@ -1,3 +1,4 @@
+/* style.css */
 :root{
   --bg: #0b0d12;
   --panel: rgba(17, 21, 34, .82);
@@ -266,21 +267,6 @@ h2{ font-size: 28px; margin: 0 0 10px; }
   line-height: 1;
 }
 .stat-label{ color: var(--muted); margin-top: 6px; }
-
-/* Skills grid */
-.skill-grid{
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-}
-.skill{
-  border: 1px solid var(--border);
-  background: var(--panel2);
-  border-radius: 14px;
-  padding: 12px;
-}
-.skill-name{ font-weight: 750; margin-bottom: 6px; }
-.skill-desc{ color: var(--muted); font-size: 13px; }
 
 /* Contact */
 .contact .footer{
