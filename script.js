@@ -1,10 +1,11 @@
+// script.js
+
 // Theme toggle (persisted)
 (function themeInit(){
   const saved = localStorage.getItem("theme");
   if (saved === "light" || saved === "dark") {
     document.documentElement.setAttribute("data-theme", saved);
   } else {
-    // Default: dark (matches your profile style)
     document.documentElement.setAttribute("data-theme", "dark");
   }
 })();
